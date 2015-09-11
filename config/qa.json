@@ -1,0 +1,42 @@
+{
+    "logger" : {
+        "level": "info",
+        "host": "svdev03",
+        "db": "order",
+        "collection": "signature-pad-logs"
+    },
+    "path": {
+        "routes": "/node/signature/",
+        "views" : "views",
+        "css" : "public/css"
+    },
+    "sqlserver": {
+        "user":  "remote_access",
+        "password":  "snapsh0t",
+        "server":  "svpts01.tdl.net",
+        "db":  "remotedb",
+        "maxConnections" : 10,
+        "minConnections": 0,
+        "timeoutConnection" : 3000
+    },
+    "redis": {
+        "port": 6379,
+        "host": "svdev03"
+    },
+    "productCache": {
+        "expiryTime": 3600
+    },
+    "storeproc": {
+        "getPositionAndPage": "remotedb.dbo.rem_api_product_type_get @product_type_id, @campaign_id",
+        "getSizes": "remotedb.dbo.rem_api_product_get @product_type_id, @campaign_id",
+        "getTitles": "remotedb.dbo.rem_api_product_titles_get @product_id",
+        "getEditions": "remotedb.dbo.rem_api_product_edzones_get @product_id, @title_id",
+        "getClassifications": "remotedb.dbo.rem_api_product_classifications_get @product_id, @title_id, @edzone_id",
+        "getContent": "remotedb.dbo.rem_api_product_content_get @Product_Id",
+        "getSchemes": "remotedb.dbo.rem_api_scheme_class_get @scheme_id, @Class_Id",
+        "getAllSchemes": "remotedb.dbo.rem_api_scheme_get @scheme_id"
+    },
+    "security": {
+        "documentationEnabled": true
+    }
+}
