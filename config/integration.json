@@ -11,7 +11,8 @@
     "path": {
         "routes": "/",
         "views" : "app/views",
-        "css" : "app/public"
+        "css" : "app/public",
+        "js" : "app/js"
     },
     "sqlserver": {
         "user":  "remote_access",

@@ -6,13 +6,10 @@ var helmet = require('helmet'),
     routes = require('./routes'),
     config = require('./middleware/configuration'),
     notFound = require('./middleware/notFound'),
-    validate = require('./middleware/validate'),
     logger = require("./middleware/logger"),
     bodyParser = require('body-parser'),
     cors = require('cors'),
-    cons = require('consolidate'),
-    documentation = require("./middleware/documentation");
-    require("./middleware/redis");
+    cons = require('consolidate');
 
 var app = express();
 var port = config.get('port');
@@ -25,6 +22,7 @@ app.engine('html', cons.handlebars);
 app.set('view engine', 'html');
 app.set('views', config.get('path:views'));
 app.use(express.static(config.get('path:css')));
+app.use(express.static(config.get('path:js')));
 app.use(helmet.xssFilter());
 app.use(helmet.hidePoweredBy());
 app.use(helmet.ienoopen());

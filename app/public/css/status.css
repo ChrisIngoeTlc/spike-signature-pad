@@ -1,0 +1,125 @@
+body {
+    margin: 50px;
+}
+.status-message{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.status-result{
+    font-weight: bold;
+}
+
+.OK {
+     background-color: #2DCC70;
+ }
+
+.ERROR {
+    background-color: #E54B4B;
+}
+.order-completed {
+    background-color: #ecf0f1;
+    border: 1px solid;
+}
+.order-processing {
+    background-color: #ecf0f1;
+    border: 1px solid;
+}
+.order-processed {
+    background-color: #2DCC70;
+    border: 1px solid;
+}
+.order-error {
+    background-color: #E54B4B;
+    border: 1px solid;
+}
+
+.api-status-box {
+    width: 300px;
+    height: 125px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.api-name{
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.api-status {
+    font-size: 0.75em;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.api-logs {
+    margin-left: 133px;
+    color: yellow;
+}
+
+.error-text {
+    color: #E54B4B;
+}
+
+.processed-text{
+    color: #2DCC70;
+}
+
+.processing-text {
+    color: #34495e;
+}
+
+.completed-text {
+    color: #34495e;
+}
+
+.order-status {
+    width: 120px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.order-id{
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+.search-label{
+    font-weight: bold;
+}
+.search-input{
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.search-button{
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+
+    width: 75px;
+    height: 23px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    border: 1px solid;
+    cursor:pointer;
+}

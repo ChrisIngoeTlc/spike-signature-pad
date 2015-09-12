@@ -8,7 +8,8 @@
     "path": {
         "routes": "/node/signature/",
         "views" : "views",
-        "css" : "public/css"
+        "css" : "app/public",
+        "js" : "app/js"
     },
     "sqlserver": {
         "user":  "remote_access",
