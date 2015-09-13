@@ -33,7 +33,8 @@ app.use(cors());
 //ROUTES
 var path = config.get("path:routes");
 app.get(path + 'healthcheck', routes.healthcheck.index);
-app.get(path, routes.status.check);
+app.get(path, routes.signature.welcome);
+app.post(path, routes.signature.captureSignature);
 app.use(notFound.index);
 
 //START
